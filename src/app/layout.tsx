@@ -31,13 +31,18 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="dark" suppressHydrationWarning>
-      <body suppressHydrationWarning className={`${roboto.variable} ${orbitron.variable} antialiased bg-black text-white min-h-screen flex flex-col font-sans overflow-x-hidden hide-scrollbar`}>
+      <body suppressHydrationWarning className={`${roboto.variable} ${orbitron.variable} antialiased bg-black text-white min-h-screen flex flex-col font-sans overflow-x-clip hide-scrollbar`}>
         <Preloader />
         <Navbar />
-        <main className="flex-1">
+
+        <main className="flex-1 flex flex-col">
           {children}
         </main>
-        <Footer />
+
+        {/* Footer scrolls over the Contact section — same technique as Gallery → Special Offers */}
+        <div className="relative z-20 bg-[#050505] shadow-[0_-20px_40px_-10px_rgba(0,0,0,0.9)]">
+          <Footer />
+        </div>
 
         <Chatbot />
       </body>

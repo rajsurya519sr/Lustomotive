@@ -21,7 +21,14 @@ export default function Home() {
       <Features />
       <Testimonials />
       <StatsStrip />
-      <Contact />
+      {/* Contact + footer sweep container */}
+      <div className="relative z-0 mb-[-100vh] bg-black">
+        {/* Contact scrolls naturally — no sticky so full section (including map) is always visible */}
+        <Contact />
+        {/* h-[200vh] spacer: footer only starts appearing after 100vh of scroll past Contact
+            (because mb-[-100vh] offsets 100vh, leaving 100vh of clean overlap animation) */}
+        <div className="h-[200vh]" />
+      </div>
     </>
   );
 }
