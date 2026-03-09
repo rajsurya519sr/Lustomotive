@@ -29,7 +29,7 @@ export default function Footer() {
                             </Link>
                             <div className="w-10 h-0.5 bg-gradient-to-r from-red-500 to-transparent mb-5 mx-auto lg:mx-0"></div>
                             <p className="text-gray-400 font-light text-[0.85rem] leading-relaxed mb-6 max-w-sm lg:max-w-none">
-                                Premium automotive detailing studio committed to excellence in car care. Serving Panagarh & surrounding West Bengal with world-class services.
+                                Premium automotive detailing studio committed to excellence in car & bike care. Serving Panagarh & surrounding West Bengal with world-class services.
                             </p>
                             <div className="flex justify-center lg:justify-start space-x-3">
                                 <a href="https://www.instagram.com/lustomotive" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="w-10 h-10 rounded-lg bg-white/5 border border-white/10 flex items-center justify-center text-gray-400 hover:bg-red-500/15 hover:border-red-500/50 hover:text-red-500 hover:-translate-y-1 transition-all">
